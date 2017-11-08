@@ -1,0 +1,18 @@
+/*
+	Theme Name: SweetTooth-Child
+	Theme URI: http://sweettooth.elated-themes.com
+	Description: A Delicious Theme for Cake Shops, Confectioneries, and Chocolateries
+	Author: Houmed AHMED
+	Author URI: https://www.traiteur-linares.fr
+	Template: SweetTooth
+	Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-menu, featured-images, flexible-header, post-formats, sticky-post, threaded-comments, translation-ready
+	Version: 1
+	License: @copy Linares-Traiteur 2017
+*/
+
+/* Need to remove it from here */
+@import url("../sweettooth/assets/css/modules.css");
+
+/* 
+* OVERRIDING PARENT STYLES 
+*/
