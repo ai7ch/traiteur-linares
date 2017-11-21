@@ -9,10 +9,8 @@
 	Version: 1
 	License: @copy Linares-Traiteur 2017
 */
-
-/* Need to remove it from here */
-@import url("../sweettooth/assets/css/modules.css");
-
+/* Importing parent CSS File */
+@import url(../sweettooth/assets/css/modules.css);
 /* 
 * OVERRIDING PARENT STYLES 
 */
