@@ -27,3 +27,4 @@ Template Name: Linares Accueil
  		</div>
  	</section>
  </div>
+ <?php get_footer(); ?>
