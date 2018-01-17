@@ -1,20 +1,39 @@
 /*
-	Theme Name: SweetTooth-Child
-	Theme URI: http://sweettooth.elated-themes.com
-	Description: A Delicious Theme for Cake Shops, Confectioneries, and Chocolateries
-	Author: Houmed AHMED
-	Author URI: https://www.traiteur-linares.fr
-	Template: SweetTooth
-	Tags: one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-menu, featured-images, flexible-header, post-formats, sticky-post, threaded-comments, translation-ready
-	Version: 1
-	License: @copy Linares-Traiteur 2017
+	Theme Name: 	SweetTooth-Child
+	Theme URI: 		http://sweettooth.elated-themes.com
+	Description: 	A Delicious Theme for Cake Shops, Confectioneries, and Chocolateries
+	Author: 		Houmed AHMED
+	Author URI: 	https://www.traiteur-linares.fr
+	Template: 		SweetTooth
+	Tags: 			one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-menu, featured-images, flexible-header, post-formats, sticky-post, threaded-comments, translation-ready
+	Version: 		1
+	License: 		Linares-Traiteur 2017
+	Text Domain: 	sweettooth-child
 */
-/* Importing parent CSS File */
-@import url(../sweettooth/assets/css/modules.css);
 /* COLORS */
-/* 
-* OVERRIDING PARENT STYLES 
-*/
-/*
-* END OVERRIDING PARENT STYLES 
-*/
+/*Overriding parent styles*/
+.eltdf-vertical-align-containers {
+  padding: 0 15px !important; }
+
+/*End overriding parent styles*/
+/*Desktop Child Theme Styles*/
+.body-content h1,
+.prestations-text h2 {
+  margin-top: 0; }
+
+.body-content h1 {
+  font-size: 45px;
+  font-weight: bold; }
+
+.body-content p {
+  color: #333; }
+
+.body-content .cta-list-nav li {
+  border: 2px solid #f13b3b;
+  padding: 10px 20px;
+  margin-right: 20px; }
+
+.cta-list-nav {
+  margin-top: 50px; }
+
+/*End Desktop Child Theme Styles*/
