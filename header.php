@@ -11,9 +11,6 @@
     do_action('sweettooth_elated_action_header_meta');
 
     wp_head(); 
-    
-    //register custom styles and javascript
-    include_once("page-templates/inc-header.php"); 
     ?>
 </head>
 <body <?php body_class();?> itemscope itemtype="http://schema.org/WebPage">
