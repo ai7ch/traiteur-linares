@@ -53,8 +53,12 @@
 		wp_enqueue_script($bootstrap_js);
 	}
 
-	add_action( "wp_enqueue_scripts", "linares_css" );
-	add_action( "wp_enqueue_scripts", "linares_js" );
+	function hook_actions(){
+		add_action( "wp_enqueue_scripts", "linares_css" );
+		add_action( "wp_enqueue_scripts", "linares_js" );
+	}
+
+	add_action("after_setup_theme","hook_actions");
 
 ////////////////////
 //UNREGISTER SUFF///
