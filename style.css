@@ -36,4 +36,16 @@
 .cta-list-nav {
   margin-top: 50px; }
 
+/* //Prestaions */
+.prestations-desc-complet > ul {
+  float: left; }
+
+.prestations-desc-complet > ul li {
+  margin-bottom: 3px; }
+
+.prestations-desc-complet > .badge-prix-prestations {
+  float: right;
+  margin-right: 80px;
+  margin-top: 10px; }
+
 /*End Desktop Child Theme Styles*/
