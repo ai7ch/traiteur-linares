@@ -53,11 +53,13 @@
 		wp_enqueue_script($bootstrap_js);
 	}
 
+	//actions handler
 	function hook_actions(){
 		add_action( "wp_enqueue_scripts", "linares_css" );
 		add_action( "wp_enqueue_scripts", "linares_js" );
 	}
 
+	//hook these after after theme files loaded
 	add_action("after_setup_theme","hook_actions");
 
 ////////////////////
