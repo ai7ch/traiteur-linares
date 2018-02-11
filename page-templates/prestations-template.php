@@ -100,7 +100,24 @@ Template Name: Linares Prestations
 						</blockquote>
 					</div>
 					<div role="plats chauds et repas" class="tab-pane" id="plats-chauds">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ratione voluptatibus quas sed commodi distinctio reiciendis, illo sint magnam repudiandae possimus, cupiditate debitis vitae atque ab earum modi eum eius quaerat doloribus dolorum perspiciatis harum eveniet. Dolorum quos saepe velit laudantium facere ab culpa incidunt, iste dignissimos ea, sequi repellendus eius accusamus modi debitis ut. Inventore nam repellendus quas facere recusandae. Tenetur molestiae laboriosam ullam quae cum optio est quis eaque praesentium omnis perspiciatis repellendus dolores, odio debitis sint, eveniet eum dolor molestias cupiditate consequatur quasi qui ea! Laudantium voluptas nihil, facere nulla cupiditate nesciunt omnis perspiciatis, eaque voluptates maxime sapiente harum labore eos incidunt. Expedita enim totam suscipit molestias, aut excepturi! Eos iste ab natus incidunt vero eligendi, enim vel in possimus id at debitis aliquam vitae, voluptatem deleniti nobis reiciendis harum! Consectetur deleniti necessitatibus voluptatem recusandae, consequuntur ad, autem vero nam voluptas, numquam in unde quasi magnam? Aliquam!
+						<p class="plats-chauds-desc">
+							<?php echo the_field("desc_plats_chauds"); ?>
+						</p>
+						<div class="row plats-chauds-text">
+							<div class="col-md-5">
+								<div class="thumbnail">
+									<img src="<?php echo $thumb_plats_chauds_uri["sizes"]["large"]?>" alt="<?php echo $thumb_plats_chauds_uri["alt"]?>">
+								</div>
+							</div>
+							<div class="col-md-7 plats-chauds-desc-complet">
+								
+							</div>							
+						</div>
+						<blockquote>
+							<p class="text-left">
+								<?php echo the_field("options_plats_chauds"); ?>
+							</p>
+						</blockquote>
 					</div>
 				</div>
  			</div>
