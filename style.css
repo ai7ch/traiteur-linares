@@ -37,6 +37,14 @@
   margin-top: 50px; }
 
 /* //Prestaions */
+#liste-menus-chauds .panel-heading {
+  padding: 0; }
+  #liste-menus-chauds .panel-heading > .panel-title > a {
+    display: block;
+    padding: 10px 15px; }
+  #liste-menus-chauds .panel-heading > .panel-title > a:hover {
+    text-decoration: none; }
+
 .prestations-desc-complet > ul {
   float: left; }
 
@@ -47,5 +55,16 @@
   float: right;
   margin-right: 80px;
   margin-top: 10px; }
+
+/* //Liste menus chauds */
+.list-menus-container {
+  margin: 0; }
+
+.badge-prix-plats-chauds {
+  margin-top: -200px; }
+
+ul.list-menus > li:nth-child(n+3):before {
+  content: "ou";
+  display: block; }
 
 /*End Desktop Child Theme Styles*/
