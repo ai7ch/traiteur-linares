@@ -67,6 +67,11 @@ Template Name: Linares Prestations
 								<div class="thumbnail">
 									<img src="<?php echo $thumb_buffet_uri["sizes"]["large"]?>" alt="<?php echo $thumb_buffet_uri["alt"]?>">
 								</div>
+								<blockquote>
+									<p class="text-left">
+										<?php echo the_field("options_buffet"); ?>
+									</p>
+								</blockquote>
 							</div>
 							<div class="col-md-7 prestations-desc-complet">
 								<?php echo the_field("text_buffet");?>
@@ -75,11 +80,6 @@ Template Name: Linares Prestations
 								</div>
 							</div>							
 						</div>
-						<blockquote>
-							<p class="text-left">
-								<?php echo the_field("options_buffet"); ?>
-							</p>
-						</blockquote>
 					</div><!-- #buffets-->
 					<div role="cocktails" class="tab-pane" id="cocktails">
 						<p class="prestations-desc">
@@ -90,6 +90,11 @@ Template Name: Linares Prestations
 								<div class="thumbnail">
 									<img src="<?php echo $thumb_cocktail_uri["sizes"]["large"]?>" alt="<?php echo $thumb_cocktail_uri["alt"]?>">
 								</div>
+								<blockquote>
+									<p class="text-left">
+										<?php echo the_field("options_cocktails"); ?>
+									</p>
+								</blockquote>
 							</div>
 							<div class="col-md-7 prestations-desc-complet">
 								<?php echo the_field("text_cocktails");?>
@@ -98,11 +103,6 @@ Template Name: Linares Prestations
 								</div>
 							</div>							
 						</div>
-						<blockquote>
-							<p class="text-left">
-								<?php echo the_field("options_cocktails"); ?>
-							</p>
-						</blockquote>
 					</div><!-- #cocktails-->
 					<div role="plats chauds et repas" class="tab-pane" id="plats-chauds">
 						<p class="plats-chauds-desc">
@@ -112,51 +112,56 @@ Template Name: Linares Prestations
 							<div class="col-md-5">
 								<div class="thumbnail">
 									<img src="<?php echo $thumb_plats_chauds_uri["sizes"]["large"]?>" alt="<?php echo $thumb_plats_chauds_uri["alt"]?>">
-								</div>
+								</div>						
+								<blockquote>
+									<p class="text-left">
+										<?php echo the_field("options_plats_chauds"); ?>
+									</p>
+								</blockquote>
 							</div>
-							<div class="col-md-7 plats-chauds-desc-complet">
+							<div class="col-md-7 prestations-desc-complet">
 								<div class="panel-group" id="liste-menus-chauds" role="tablist" aria-multiselectable="true">
 								<?php foreach ($menu_plats_chauds as $id_menu => $menus): ?>
 									<div class="panel panel-default">
-										<div class="panel-heading" role="tab" id="heading<?=$id_menu?>">
+										<div class="panel-heading" role="tab" id="heading-menu-<?=$id_menu?>">
 											<h4 class="panel-title">
-											    <a role="button" data-toggle="collapse" data-parent="#liste-menus-chauds" href="#collapse<?=$id_menu?>" aria-expanded="true" aria-controls="collapse<?=$id_menu?>">
-											    	Menu <?=($id_menu+1); ?>
+											    <a role="button" data-toggle="collapse" data-parent="#liste-menus-chauds" href="#collapse-menu-<?=$id_menu?>" aria-expanded="true" aria-controls="collapse-menu-<?=$id_menu?>">
+											    	Example menu <?=($id_menu+1); ?>
 											    </a>
 											</h4>
 										</div>
-										<div id="collapse<?=$id_menu?>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<?=$id_menu?>">
-											<div class="panel-body">
-												<ul class="list-group">
+										<div id="collapse-menu-<?=$id_menu?>" class="panel-collapse collapse <?php echo ($id_menu === 0) ? "in" : ""?>" role="tabpanel" aria-labelledby="heading-menu-<?=$id_menu?>">
+											<div class="panel-body row list-menus-container">
 												<?php foreach ($menus as $key => $value): ?>
-													<?=(isset($menu_head[$key])) ? "<li class='list-group-item active'>".$menu_head[$key]."</li>" : "" ?>
-													<?php if ($key !== "badge_prix_menu"): ?>
-														<?php foreach ($value["liste_nom_".$key] as $info_menu): ?>
-															<li>
-																<?=$info_menu["nom"] ?>
-															</li>
-														<?php endforeach ?>
-													<?php endif ?>
-													<?php if($key === "badge_prix_menu"): ?>
-														<p>Badge ici</p>
-													<?php endif; ?>
-												<?php endforeach ?>
+												<?php 
+													//by escaping price badge 
+													//loop through the list of the menu item
+													if ($key !== "badge_prix_menu"): ?>
+												<ul class="list-group list-unstyled col-md-7 list-menus">
+													<?php 
+													//print menu headings
+													//Escape menu price badge 
+													echo (isset($menu_head[$key])) ? "<li class='list-group-item active'>".$menu_head[$key]."</li>" : "" ?>
+													<?php foreach ($value["liste_nom_".$key] as $info_menu): ?>
+														<li>
+															<?=$info_menu["nom"] ?>
+														</li>
+													<?php endforeach ?>
 												</ul>
+												<?php endif ?>
+												<?php if($key === "badge_prix_menu"): ?>
+												<div class="badge-prix-plats-chauds col-md-5">
+													<img src="<?php echo $menus[$key]["sizes"]["large"]?>" alt="<?php echo $menu[$key]["alt"] ?>">
+												</div>
+												<?php endif; ?>
+												<?php endforeach ?>
 											</div>
 										</div>
 									</div>
 								<?php endforeach ?>
 								</div><!--#liste-menus-chauds-->
-							</div><!-- .plats-chauds-desc-complet -->						
+							</div><!-- .plats-chauds-desc-complet -->
 						</div>
-						<blockquote>
-							<p class="text-left">
-								<?php echo the_field("options_plats_chauds"); ?>
-							</p>
-						</blockquote>
-						<pre>
-							<?php print_r($menu_plats_chauds) ?>
-						</pre>
 					</div><!-- #plats-chauds-->
 				</div> <!--.tab-content -->
  			</div>
