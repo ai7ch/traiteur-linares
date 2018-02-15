@@ -44,12 +44,6 @@ a:visited {
   margin-top: 50px; }
 
 /* //Prestaions */
-#liste-menus-chauds .panel-heading {
-  padding: 0; }
-  #liste-menus-chauds .panel-heading > .panel-title > a {
-    display: block;
-    padding: 10px 15px; }
-
 .prestations-desc-complet > ul {
   float: left; }
 
@@ -62,14 +56,22 @@ a:visited {
   margin-top: 10px; }
 
 /* //Liste menus chauds */
-.list-menus-container {
-  margin: 0; }
+#liste-menus-chauds .panel-heading {
+  padding: 0; }
+  #liste-menus-chauds .panel-heading > .panel-title > a {
+    display: block;
+    padding: 10px 15px; }
 
-.badge-prix-plats-chauds {
-  margin-top: -200px; }
+.liste-menus-container {
+  margin: 0; }
 
 ul.list-menus > li:nth-child(n+3):before {
   content: "ou";
   display: block; }
+
+#contact-container {
+  height: 600px;
+  background-image: url(http://sweettooth.elated-themes.com/wp-content/uploads/2017/03/contact-title-img.jpg);
+  background-position: center 800px; }
 
 /*End Desktop Child Theme Styles*/
