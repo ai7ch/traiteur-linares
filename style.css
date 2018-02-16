@@ -69,9 +69,27 @@ ul.list-menus > li:nth-child(n+3):before {
   content: "ou";
   display: block; }
 
-#contact-container {
-  height: 600px;
+.parallax {
   background-image: url(http://sweettooth.elated-themes.com/wp-content/uploads/2017/03/contact-title-img.jpg);
-  background-position: center 800px; }
+  min-height: 350px;
+  background-attachment: fixed;
+  background-position: center -90px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#contact-intro {
+  padding: 100px 0 0; }
+  #contact-intro > h2 {
+    font-size: 50px; }
+  #contact-intro > h2:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: red;
+    width: 10%;
+    margin-top: 15px; }
+  #contact-intro > p {
+    width: 80%;
+    font-size: 18px; }
 
 /*End Desktop Child Theme Styles*/

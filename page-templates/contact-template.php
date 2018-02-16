@@ -16,31 +16,37 @@ Template Name: Linares Contact
  		</div>
  		<div class="body-content">
  			<div id="contact-container">
-	 			<?php 
-	 				while (have_posts()){ 
-	 					the_post();
-	 					$contents = the_content();
-	 					echo $contents;
-	 				}
-	 			 ?>
-
-
-	 			<div id="infos-contact-container">
-	 				<pre>	 					
-	 					<?php print_r($contact_info_fields); ?>
-	 				</pre>
-	 				<div id="infos-contact-wrapper">
+	 			<div id="contact-intro" class="parallax">
+		 			<?php 
+		 				while (have_posts()){ 
+		 					the_post();
+		 					$contents = the_content();
+		 					echo $contents;
+		 				}
+		 			 ?>
+	 			</div> <!--#infos-contact-container -->
+ 				<div id="infos-contact-wrapper" class="row">
+ 					<div class="col-md-6">
 		 				<div class="text-contact">
-		 					<p>text</p>
+		 					<h3>Traiteur Linares</h3>
+		 					<p><?php echo $contact_info_fields["texte_presentation"]?></p>
 		 				</div>
 		 				<div id="address">
-		 					<p>address</p>
+		 					<ul class="list-unstyled">
+		 						<li><?php echo $contact_info_fields["adresse"]["ville"] ?></li>
+		 						<li><?php echo $contact_info_fields["adresse"]["numero_rue"] ?></li>
+		 						<li><?php echo $contact_info_fields["adresse"]["code_postal"] ?></li>
+		 						<li><?php echo $contact_info_fields["adresse"]["email"] ?></li>
+		 						<li><?php echo $contact_info_fields["adresse"]["phone"] ?></li>
+		 					</ul>
 		 				</div>
+ 					</div>
+ 					<div class="col-md-6">	 						
 		 				<div id="form">
 		 					<?php echo do_shortcode($contact_info_fields["form"]) ?>
 		 				</div>
-	 				</div> <!--#infos-contact-wrapper -->
-	 			</div> <!--#infos-contact-container -->
+ 					</div>
+ 				</div> <!--#infos-contact-wrapper -->
  			</div> <!--#contact-container -->
  		</div>
  	</section>
