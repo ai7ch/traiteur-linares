@@ -11,6 +11,8 @@
 	Text Domain: 	sweettooth-child
 */
 /* COLORS */
+/* Mixins */
+/* Variables */
 /*Overriding parent styles*/
 a,
 a:hover,
@@ -48,19 +50,19 @@ a:visited {
   float: left; }
 
 .prestations-desc-complet > ul li {
-  margin-bottom: 3px; }
+  margin-bottom: 0.2em; }
 
 .prestations-desc-complet > .badge-prix-prestations {
   float: right;
-  margin-right: 80px;
-  margin-top: 10px; }
+  margin-right: 4em;
+  margin-top: 2.5em; }
 
 /* //Liste menus chauds */
 #liste-menus-chauds .panel-heading {
   padding: 0; }
   #liste-menus-chauds .panel-heading > .panel-title > a {
     display: block;
-    padding: 10px 15px; }
+    padding: 0.5em 1em; }
 
 .liste-menus-container {
   margin: 0; }
@@ -71,25 +73,54 @@ ul.list-menus > li:nth-child(n+3):before {
 
 .parallax {
   background-image: url(http://sweettooth.elated-themes.com/wp-content/uploads/2017/03/contact-title-img.jpg);
-  min-height: 350px;
+  min-height: 45vh;
   background-attachment: fixed;
-  background-position: center -90px;
+  background-position: center -5.6em;
   background-repeat: no-repeat;
   background-size: cover; }
 
 #contact-intro {
-  padding: 100px 0 0; }
+  padding: 6.5em 0 0; }
   #contact-intro > h2 {
-    font-size: 50px; }
-  #contact-intro > h2:after {
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: red;
-    width: 10%;
-    margin-top: 15px; }
+    font-size: 3.5em; }
+    #contact-intro > h2:after {
+      content: "";
+      display: block;
+      height: 0.03em;
+      background-color: red;
+      width: 10%;
+      margin-top: 15px; }
   #contact-intro > p {
-    width: 80%;
-    font-size: 18px; }
+    width: 50vw;
+    font-size: 1.3em; }
+
+#infos-contact-wrapper {
+  background-image: url("http://sweettooth.elated-themes.com/wp-content/uploads/2017/03/contact-background-img.jpg");
+  background-position: right center; }
+  #infos-contact-wrapper .text-contact > h3 {
+    font-size: 1.7em; }
+    #infos-contact-wrapper .text-contact > h3:after {
+      content: "";
+      display: block;
+      height: 0.03em;
+      background-color: red;
+      width: 10%;
+      margin-top: 15px; }
+  #infos-contact-wrapper #address > ul {
+    font-size: 1.2em;
+    margin-top: 1.8em; }
+    #infos-contact-wrapper #address > ul li:first-child,
+    #infos-contact-wrapper #address > ul li:nth-child(3n) {
+      margin-bottom: 0.9em; }
+    #infos-contact-wrapper #address > ul li {
+      margin-bottom: 0.2em; }
+      #infos-contact-wrapper #address > ul li > a {
+        color: #333; }
+      #infos-contact-wrapper #address > ul li > a[href^="mailto:"]:before {
+        content: "\2709";
+        margin-right: 0.5em; }
+      #infos-contact-wrapper #address > ul li > a[href^="tel:"]:before {
+        content: "\260e";
+        margin-right: 0.5em; }
 
 /*End Desktop Child Theme Styles*/
