@@ -111,8 +111,7 @@ ul.list-menus > li:nth-child(n+3):before {
   #infos-contact-wrapper #address > ul {
     font-size: 1.2em;
     margin-top: 1.8em; }
-    #infos-contact-wrapper #address > ul li:first-child,
-    #infos-contact-wrapper #address > ul li:nth-child(3n) {
+    #infos-contact-wrapper #address > ul li:nth-child(2n) {
       margin-bottom: 0.9em; }
     #infos-contact-wrapper #address > ul li {
       margin-bottom: 0.2em; }

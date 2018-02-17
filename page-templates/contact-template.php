@@ -35,7 +35,6 @@ Template Name: Linares Contact
 		 				</div>
 		 				<div id="address">
 		 					<ul class="list-unstyled">
-		 						<li><?php echo $contact_info_fields["adresse"]["ville"] ?></li>
 		 						<li><?php echo $contact_info_fields["adresse"]["numero_rue"] ?></li>
 		 						<li><?php echo $contact_info_fields["adresse"]["code_postal"] ?></li>
 		 						<li><a href="mailto:<?php echo $contact_info_fields["adresse"]["email"] ?>"><?php echo $contact_info_fields["adresse"]["email"] ?></a></li>
