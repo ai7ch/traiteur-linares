@@ -80,7 +80,7 @@ ul.list-menus > li:nth-child(n+3):before {
   background-size: cover; }
 
 #contact-intro {
-  padding: 6.5em 0 0; }
+  padding: 6.5em 1em 0; }
   #contact-intro > h2 {
     font-size: 3.5em; }
     #contact-intro > h2:after {
@@ -96,13 +96,15 @@ ul.list-menus > li:nth-child(n+3):before {
 
 #infos-contact-wrapper {
   background-image: url("http://sweettooth.elated-themes.com/wp-content/uploads/2017/03/contact-background-img.jpg");
-  background-position: right center; }
+  background-position: right center;
+  padding: 1em;
+  margin-top: -1em; }
   #infos-contact-wrapper .text-contact > h3 {
     font-size: 1.7em; }
     #infos-contact-wrapper .text-contact > h3:after {
       content: "";
       display: block;
-      height: 0.03em;
+      height: 0.07em;
       background-color: red;
       width: 10%;
       margin-top: 15px; }
@@ -122,5 +124,15 @@ ul.list-menus > li:nth-child(n+3):before {
       #infos-contact-wrapper #address > ul li > a[href^="tel:"]:before {
         content: "\260e";
         margin-right: 0.5em; }
+  #infos-contact-wrapper #form {
+    padding-right: 2em; }
+    #infos-contact-wrapper #form p > label {
+      width: 100vw; }
+  #infos-contact-wrapper #map {
+    margin: 1em 0 -1.5em; }
+    #infos-contact-wrapper #map > iframe {
+      width: 100%;
+      margin: 0 -1em;
+      height: 45vh; }
 
 /*End Desktop Child Theme Styles*/
