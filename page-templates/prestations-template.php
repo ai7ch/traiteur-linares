@@ -35,7 +35,7 @@ Template Name: Linares Prestations
  					echo $contents;
  				endwhile;
  			 ?>
- 			<div class="tab-prestations-container">
+ 			<div id="tab-prestations-container">
  				<!-- Nav tabs -->
 				<ul class="nav nav-tabs" id="tab-prestations" role="tablist">
 					<li role="buffets" class="active">
@@ -131,13 +131,13 @@ Template Name: Linares Prestations
 											</h4>
 										</div>
 										<div id="collapse-menu-<?=$id_menu?>" class="panel-collapse collapse <?php echo ($id_menu === 0) ? "in" : ""?>" role="tabpanel" aria-labelledby="heading-menu-<?=$id_menu?>">
-											<div class="panel-body row list-menus-container">
+											<div class="panel-body row liste-menus-container">
 												<?php foreach ($menus as $key => $value): ?>
 												<?php 
 													//by escaping price badge 
 													//loop through the list of the menu item
 													if ($key !== "badge_prix_menu"): ?>
-												<ul class="list-group list-unstyled col-md-7 list-menus">
+												<ul class="list-group list-unstyled col-md-4 list-menus">
 													<?php 
 													//print menu headings
 													//Escape menu price badge 
@@ -150,7 +150,7 @@ Template Name: Linares Prestations
 												</ul>
 												<?php endif ?>
 												<?php if($key === "badge_prix_menu"): ?>
-												<div class="badge-prix-plats-chauds col-md-5">
+												<div class="badge-prix-plats-chauds col-md-5" style="width: 100px !important; ">
 													<img src="<?php echo $menus[$key]["sizes"]["large"]?>" alt="<?php echo $menu[$key]["alt"] ?>">
 												</div>
 												<?php endif; ?>
