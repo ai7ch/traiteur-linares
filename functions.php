@@ -1,5 +1,15 @@
 <?php 
 
+
+///////////////////////////////////////////
+// UNHOOK PARENT THEME CUSTOM POST TYPES //
+///////////////////////////////////////////
+	add_action("after_setup_theme", "remove_portfolio", 11);
+	function remove_portfolio() {
+		remove_action( "init", "eltdf-portfolio-item"); //themeum_post_type_schedule
+	}
+
+
 ///////////////////////////////////
 //REGISTER & INCLUDES SCRIPTS // //
 ///////////////////////////////////
