@@ -71,6 +71,9 @@ ul.list-menus > li:nth-child(n+3):before {
   content: "ou";
   display: block; }
 
+/*//////////*/
+/* Contact */
+/*/////////*/
 .parallax {
   background-image: url(http://sweettooth.elated-themes.com/wp-content/uploads/2017/03/contact-title-img.jpg);
   min-height: 45vh;
@@ -128,7 +131,7 @@ ul.list-menus > li:nth-child(n+3):before {
     #infos-contact-wrapper #form p > label {
       width: 100vw; }
   #infos-contact-wrapper #map {
-    margin: 1em 0 -1.5em; }
+    margin: 3.5em -2em 0 1em; }
     #infos-contact-wrapper #map > iframe {
       width: 100%;
       margin: 0 -1em;
