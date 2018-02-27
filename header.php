@@ -11,7 +11,10 @@
     do_action('sweettooth_elated_action_header_meta');
 
     wp_head(); 
+
+    // Registere custom scripts
     ?>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body <?php body_class();?> itemscope itemtype="http://schema.org/WebPage">
     <?php
